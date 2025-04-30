@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - dev
+  
+  #workflow-dispatch:
+
 jobs:
   build:
     name: Build and analyze
@@ -19,8 +22,8 @@ jobs:
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
         with:
           args: >
-            -Dsonar.projectKey=frontend-devops
-            -Dsonar.projectName=frontend-devops
+            -Dsonar.projectKey=aula-devops
+            -Dsonar.projectName=aula-devops
             -Dsonar.projectVersion=1.0.0
             -Dsonar.sources=.
 
