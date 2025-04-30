@@ -1,7 +1,7 @@
 name: integration
 run-name:  Pipeline de CI
 on:
-  pull_request:
+  push:
     branches:
       - dev
   
