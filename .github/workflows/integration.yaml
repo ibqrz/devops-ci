@@ -23,7 +23,7 @@ jobs:
         with:
           args: >
             -Dsonar.projectKey=aula-devops
-            -Dsonar.projectName=aula devops
+            -Dsonar.projectName=aula-devops
             -Dsonar.projectVersion=1.0.0
             -Dsonar.sources=.
 
