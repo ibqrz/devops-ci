@@ -1,7 +1,7 @@
 name: continuos-deployment
 run-name: Deploy do App
 on:
-    pull_request:
+    push:
         branches:
             - main
     workflow_dispatch:
