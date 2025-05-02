@@ -57,6 +57,11 @@ jobs:
               cd integration-test
               npm i     
 
+          - name: Verify Cypress Installation
+            run: |
+                cd integration-test
+                npx cypress verify
+
           - name: Run E2E Cypress
             run: |
               cd integration-test
